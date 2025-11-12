@@ -1,0 +1,8 @@
+build/
+gcm.cache/
+*.o
+*.a
+*.so
+*.exe
+hello_world
+main
