@@ -9,7 +9,9 @@
                 "-B",
                 "build",
                 "-S",
-                "."
+                ".",
+                "-G",
+                "Unix Makefiles"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
