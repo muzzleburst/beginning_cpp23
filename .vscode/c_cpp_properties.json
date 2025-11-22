@@ -12,7 +12,8 @@
             "intelliSenseMode": "linux-gcc-x64",
             "compilerArgs": [
                 "-fmodules-ts"
-            ]
+            ],
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4
