@@ -39,6 +39,25 @@
             },
             "dependsOn": ["CMake: Configure"],
             "detail": "Build CMake project"
+        },
+        {
+            "type": "shell",
+            "label": "Run: Ex1_01",
+            "command": "${workspaceFolder}/build/exercises/Ex1_01/Ex1_01",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": ["CMake: Build"],
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "detail": "Run Ex1_01 without debugging"
         }
     ]
 }
