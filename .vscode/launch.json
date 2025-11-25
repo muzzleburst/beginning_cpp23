@@ -2,20 +2,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C++: Run Current Exercise",
-            "type": "cppdbg",
+            "name": "Ex1_01: Run (No Debug)",
+            "type": "node-terminal",
             "request": "launch",
-            "program": "${command:cmake.launchTargetPath}",
-            "args": [],
-            "stopAtEntry": false,
+            "command": "${workspaceFolder}/build/exercises/Ex1_01/Ex1_01",
             "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
             "preLaunchTask": "CMake: Build"
         },
         {
-            "name": "Ex1_01: Hello World",
+            "name": "Ex1_01: Debug",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/exercises/Ex1_01/Ex1_01",
