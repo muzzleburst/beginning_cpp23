@@ -22,10 +22,11 @@ This project has been tested on:
 ## Project Structure
 
 - `exercises/` - Individual exercise subdirectories
-  - `Ex1_01/` - Hello World program
+  - `Ex1_01/` - First exercise
   - `Ex1_02/` - Second exercise
-- `gcm.cache/` - Pre-compiled module cache for `std` module
-- `module.map` - Module mapper configuration
+- `gcm.cache/` - Pre-compiled module cache for `std` module (generated)
+- `module.map.in` - Module mapper configuration template
+- `module.map` - Generated module mapper configuration (created by CMake)
 - `add_exercise.sh` - Script to automate exercise creation
 
 ## Initial Setup
