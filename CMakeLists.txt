@@ -8,3 +8,4 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Add subdirectories for each exercise
 add_subdirectory(exercises/Ex1_01)
+add_subdirectory(exercises/Ex1_02)

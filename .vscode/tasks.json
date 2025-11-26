@@ -58,6 +58,25 @@
                 "clear": false
             },
             "detail": "Run Ex1_01 without debugging"
+        },
+        {
+            "type": "shell",
+            "label": "Run: Ex1_02",
+            "command": "${workspaceFolder}/build/exercises/Ex1_02/Ex1_02",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": ["CMake: Build"],
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "detail": "Run Ex1_02 without debugging"
         }
     ]
 }
