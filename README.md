@@ -4,7 +4,7 @@ A collection of C++23 exercises and examples using C++ modules (`import std;`).
 
 This project has been targeted to work with Microsoft VS Code and GNU g++.
 
-This repository contains personal learning experiences from [Beginning C++23](https://github.com/Apress/beginning-cpp23), Seventh Edition, by Ivor Horton and Peter Van Weert (Apress).
+This repository contains personal learning experiences from [Beginning C++23](https://github.com/Apress/beginning-cpp23), Seventh Edition, by Ivor Horton and Peter Van Weert (Apress). Their great contributions can be supported by purchasing copies of this publication. Both printed and e-book versions are available.
 
 ## Prerequisites
 
