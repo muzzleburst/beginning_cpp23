@@ -2,11 +2,11 @@
 
 A VS Code build configuration for working with examples from [Beginning C++23](https://github.com/Apress/beginning-cpp23), Seventh Edition, by Ivor Horton and Peter Van Weert (Apress).
 
-**Important**: This repository contains only build configuration and VS Code settings. The actual source code examples are kept separate to respect the Apress license and avoid copyright issues.
+**Important**: This repository contains only build configuration and VS Code settings. The actual source code examples and exercises are kept separate via the repository linked above.
 
 ## Prerequisites
 
-- GCC 15.2.0 or later (with C++23/26 module support)
+- GCC with C++23 module support
 - CMake 3.31.6 or later
 - VS Code with C/C++ extension (recommended)
 - Git (for cloning the Apress source repository)
@@ -43,13 +43,21 @@ This project has been tested on:
 
 ### 1. Clone the Apress Source Repository
 
-Before building, you must clone the official Apress repository containing the source code examples:
+Before building, you must clone the official Apress repository containing the source code examples.
+
+#### Using VS Code (Recommended)
+
+1. Press `Ctrl+Shift+P` to open the Command Palette
+2. Type "Tasks: Run Task"
+3. Select "Setup: Clone Apress Source Repository"
+
+#### Using Command Line
 
 ```bash
 ./setup_source.sh
 ```
 
-This script will clone the Apress repository to `../beginning-cpp23-source/` (a sibling directory).
+This will clone the Apress repository to `../beginning-cpp23-source/` (a sibling directory).
 
 ### 2. Build the GCM Cache
 
