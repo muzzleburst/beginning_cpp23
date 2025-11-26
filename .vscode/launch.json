@@ -33,7 +33,7 @@ SOFTWARE.
             "name": "Ex1_01: Run (No Debug)",
             "type": "node-terminal",
             "request": "launch",
-            "command": "${workspaceFolder}/build/exercises/Ex1_01/Ex1_01",
+            "command": "${workspaceFolder}/build/Ex1_01",
             "cwd": "${workspaceFolder}",
             "preLaunchTask": "CMake: Build"
         },
@@ -41,7 +41,7 @@ SOFTWARE.
             "name": "Ex1_01: Debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/exercises/Ex1_01/Ex1_01",
+            "program": "${workspaceFolder}/build/Ex1_01",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -49,13 +49,20 @@ SOFTWARE.
             "externalConsole": false,
             "MIMode": "gdb",
             "preLaunchTask": "CMake: Build"
-        }
         },
         {
-            "name": "Ex2_01",
+            "name": "Ex2_01: Run (No Debug)",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "${workspaceFolder}/build/Ex2_01",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "CMake: Build"
+        },
+        {
+            "name": "Ex2_01: Debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/exercises/Ex2_01/Ex2_01",
+            "program": "${workspaceFolder}/build/Ex2_01",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

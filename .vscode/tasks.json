@@ -31,6 +31,16 @@ SOFTWARE.
     "tasks": [
         {
             "type": "shell",
+            "label": "Setup: Clone Apress Source Repository",
+            "command": "${workspaceFolder}/setup_source.sh",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "detail": "Clone or update the Apress Beginning C++23 source repository"
+        },
+        {
+            "type": "shell",
             "label": "Build GCM Cache for std",
             "command": "mkdir -p gcm.cache && g++ -std=c++23 -O2 -fmodules -fsearch-include-path -fmodule-only -c bits/std.cc -o gcm.cache/std.gcm",
             "options": {
@@ -91,7 +101,7 @@ SOFTWARE.
         {
             "type": "shell",
             "label": "Run: Ex1_01",
-            "command": "${workspaceFolder}/build/exercises/Ex1_01/Ex1_01",
+            "command": "${workspaceFolder}/build/Ex1_01",
             "options": {
                 "cwd": "${workspaceFolder}"
             },
@@ -110,7 +120,7 @@ SOFTWARE.
         {
             "type": "shell",
             "label": "Run: Ex2_01",
-            "command": "${workspaceFolder}/build/exercises/Ex2_01/Ex2_01",
+            "command": "${workspaceFolder}/build/Ex2_01",
             "options": {
                 "cwd": "${workspaceFolder}"
             },

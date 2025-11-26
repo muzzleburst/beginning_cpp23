@@ -7,3 +7,7 @@ module.map
 *.exe
 hello_world
 main
+
+# Apress source code (cloned externally)
+beginning-cpp23-source/
+../beginning-cpp23-source/
