@@ -2,6 +2,8 @@
 
 A collection of C++23 exercises and examples using C++ modules (`import std;`).
 
+This repository contains personal learning experiences from [Beginning C++23](https://github.com/Apress/beginning-cpp23), Seventh Edition, by Ivor Horton and Peter Van Weert (Apress).
+
 ## Prerequisites
 
 - GCC 15.2.0 or later (with C++23/26 module support)
