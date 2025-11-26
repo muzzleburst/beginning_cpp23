@@ -73,7 +73,7 @@ Generate the GCM cache for the C++ standard library module:
 
 ```bash
 mkdir -p gcm.cache
-g++ -std=c++26 -O2 -fmodules -fsearch-include-path -fmodule-only -c bits/std.cc -o gcm.cache/std.gcm
+g++ -std=c++23 -O2 -fmodules -fsearch-include-path -fmodule-only -c bits/std.cc -o gcm.cache/std.gcm
 ```
 
 ## Building
