@@ -8,15 +8,16 @@ This repository contains personal learning experiences from [Beginning C++23](ht
 
 ## Prerequisites
 
-- GCC 15.2.0 or later (with C++23 module support)
+- GCC (with C++23 module support)
 - CMake 3.31.6 or later
-- VS Code 1.106.2 with C/C++ extension (recommended)
+- VS Code with C/C++ extension (recommended)
 
 ## Tested Environment
 
 This project has been tested on:
 - **OS**: Ubuntu 25.10
 - **Compiler**: GCC 15.2.0
+- **IDE**: VS Code 1.106.2
 
 ## Project Structure
 
@@ -43,7 +44,7 @@ This will create `gcm.cache/std.gcm` which is required for `import std;` to work
 
 ```bash
 mkdir -p gcm.cache
-g++ -std=c++26 -O2 -fmodules -fsearch-include-path -fmodule-only -c bits/std.cc -o gcm.cache/std.gcm
+g++ -std=c++23 -O2 -fmodules -fsearch-include-path -fmodule-only -c bits/std.cc -o gcm.cache/std.gcm
 ```
 
 ## Building
