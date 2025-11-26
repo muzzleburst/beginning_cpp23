@@ -1,4 +1,3 @@
-# Exercise 1.01: Hello World
 #[[
 Freeware License, some rights reserved
 

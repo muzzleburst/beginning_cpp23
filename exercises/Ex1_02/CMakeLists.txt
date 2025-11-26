@@ -1,4 +1,3 @@
-# Ex1_02
 #[[
 Freeware License, some rights reserved
 
