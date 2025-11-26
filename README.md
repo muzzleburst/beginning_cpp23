@@ -1,14 +1,16 @@
-# Beginning C++23
+# Beginning C++23 Personal Learning Experiences
 
 A collection of C++23 exercises and examples using C++ modules (`import std;`).
+
+This project has been targeted to work with Microsoft VS Code and GNU g++.
 
 This repository contains personal learning experiences from [Beginning C++23](https://github.com/Apress/beginning-cpp23), Seventh Edition, by Ivor Horton and Peter Van Weert (Apress).
 
 ## Prerequisites
 
-- GCC 15.2.0 or later (with C++23/26 module support)
+- GCC 15.2.0 or later (with C++23 module support)
 - CMake 3.31.6 or later
-- VS Code with C/C++ extension (recommended)
+- VS Code 1.106.2 with C/C++ extension (recommended)
 
 ## Tested Environment
 
