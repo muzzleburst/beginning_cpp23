@@ -3,6 +3,26 @@
     "tasks": [
         {
             "type": "shell",
+            "label": "Build GCM Cache for std",
+            "command": "mkdir -p gcm.cache && g++ -std=c++23 -O2 -fmodules -fsearch-include-path -fmodule-only -c bits/std.cc -o gcm.cache/std.gcm",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "detail": "Generate GCM cache for std module"
+        },
+        {
+            "type": "shell",
+            "label": "Clean Project",
+            "command": "rm -rf build gcm.cache module.map",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "detail": "Clean build directory, GCM cache, and generated module.map"
+        },
+        {
+            "type": "shell",
             "label": "CMake: Configure",
             "command": "cmake",
             "args": [

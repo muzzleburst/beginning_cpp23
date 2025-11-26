@@ -6,6 +6,13 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+# Generate module.map with the correct absolute path
+configure_file(
+    ${CMAKE_SOURCE_DIR}/module.map.in
+    ${CMAKE_SOURCE_DIR}/module.map
+    @ONLY
+)
+
 # Add subdirectories for each exercise
 add_subdirectory(exercises/Ex1_01)
 add_subdirectory(exercises/Ex1_02)
