@@ -109,3 +109,7 @@ This project uses C++23 modules with `import std;`. The GCM cache must be built 
 - IntelliSense error squiggles are disabled due to lack of C++23 module support in the C/C++ extension
 - The project uses Unix Makefiles as the CMake generator (not Ninja) to avoid generator conflicts
 - Clean the build directory if you encounter generator mismatch errors: `rm -rf build`
+
+## Licenses
+
+Please check individual files for license and copyright information. Individual files in this repository may be subject to different licenses and copyrights.
