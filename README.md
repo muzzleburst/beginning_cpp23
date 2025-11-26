@@ -23,7 +23,7 @@ This project has been tested on:
 
 - `exercises/` - Individual exercise subdirectories
   - `Ex1_01/` - First exercise
-  - `Ex1_02/` - Second exercise
+  - `Ex2_01/` - Second exercise
 - `gcm.cache/` - Pre-compiled module cache for `std` module (generated)
 - `module.map.in` - Module mapper configuration template
 - `module.map` - Generated module mapper configuration (created by CMake)
@@ -55,7 +55,7 @@ g++ -std=c++23 -O2 -fmodules -fsearch-include-path -fmodule-only -c bits/std.cc 
 - **Build Project**: Press `Ctrl+Shift+B` or run task "CMake: Build"
 - **Configure CMake**: Run task "CMake: Configure"
 - **Run Exercise 1**: Run task "Run: Ex1_01"
-- **Run Exercise 2**: Run task "Run: Ex1_02"
+- **Run Exercise 2**: Run task "Run: Ex2_01"
 
 ### Using Command Line
 
@@ -76,7 +76,7 @@ cmake --build build
 
 ```bash
 ./build/exercises/Ex1_01/Ex1_01
-./build/exercises/Ex1_02/Ex1_02
+./build/exercises/Ex2_01/Ex2_01
 ```
 
 ## Adding New Exercises

@@ -26,10 +26,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ]]
 
-add_executable(Ex1_02 Ex1_02.cpp)
+add_executable(Ex2_01 Ex2_01.cpp)
 
 # Enable modules and use the module mapper
-target_compile_options(Ex1_02 PRIVATE 
+target_compile_options(Ex2_01 PRIVATE 
     -fmodules-ts
     -fmodule-mapper=${CMAKE_SOURCE_DIR}/module.map
 )

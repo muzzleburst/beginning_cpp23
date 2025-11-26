@@ -52,10 +52,10 @@ SOFTWARE.
         }
         },
         {
-            "name": "Ex1_02",
+            "name": "Ex2_01",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/exercises/Ex1_02/Ex1_02",
+            "program": "${workspaceFolder}/build/exercises/Ex2_01/Ex2_01",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

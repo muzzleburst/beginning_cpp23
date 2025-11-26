@@ -43,4 +43,4 @@ configure_file(
 
 # Add subdirectories for each exercise
 add_subdirectory(exercises/Ex1_01)
-add_subdirectory(exercises/Ex1_02)
+add_subdirectory(exercises/Ex2_01)

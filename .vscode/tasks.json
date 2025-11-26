@@ -109,8 +109,8 @@ SOFTWARE.
         },
         {
             "type": "shell",
-            "label": "Run: Ex1_02",
-            "command": "${workspaceFolder}/build/exercises/Ex1_02/Ex1_02",
+            "label": "Run: Ex2_01",
+            "command": "${workspaceFolder}/build/exercises/Ex2_01/Ex2_01",
             "options": {
                 "cwd": "${workspaceFolder}"
             },
@@ -124,7 +124,7 @@ SOFTWARE.
                 "showReuseMessage": false,
                 "clear": false
             },
-            "detail": "Run Ex1_02 without debugging"
+            "detail": "Run Ex2_01 without debugging"
         }
     ]
 }
