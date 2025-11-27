@@ -28,7 +28,7 @@ int main()
     unsigned long long unsigned_long_long {1};
     signed long long signed_long_long {-1};
 
-    float float_plain {3.14};
+    float float_plain {3.14f};
     double double_plain {3.14};
     long double long_double_plain {3.14};
     std::float16_t float16_plain {static_cast<std::float16_t>(3.14)};

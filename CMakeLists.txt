@@ -224,4 +224,6 @@ add_executable(exercise_2_1 "projects/exercise_2_1/exercise_2_1.cpp")
 target_compile_options(exercise_2_1 PRIVATE 
     -fmodules-ts
     -fmodule-mapper=${CMAKE_SOURCE_DIR}/module.map
+    -Werror=float-conversion
+    -Werror=conversion
 )
