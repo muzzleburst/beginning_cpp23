@@ -8,6 +8,8 @@ import std;
 
 int main()
 {
-    std::println("Hello from {}!", "test_increment_side_effects");
+    int x {3};
+    x = ++x + x++ + x;
+    std::println("Final value of x is {}", x); // x is 13
     return 0;
 }
