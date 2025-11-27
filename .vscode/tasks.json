@@ -135,6 +135,25 @@ SOFTWARE.
                 "clear": false
             },
             "detail": "Run Ex2_01 without debugging"
+        },
+        {
+            "type": "shell",
+            "label": "Run: test_increment_side_effects",
+            "command": "${workspaceFolder}/build/test_increment_side_effects",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": ["CMake: Build"],
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "detail": "Run test_increment_side_effects without debugging"
         }
     ]
 }

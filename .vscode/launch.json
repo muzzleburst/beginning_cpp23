@@ -70,6 +70,27 @@ SOFTWARE.
             "externalConsole": false,
             "MIMode": "gdb",
             "preLaunchTask": "CMake: Build"
+        },
+        {
+            "name": "test_increment_side_effects: Run (No Debug)",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "${workspaceFolder}/build/test_increment_side_effects",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "CMake: Build"
+        },
+        {
+            "name": "test_increment_side_effects: Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/test_increment_side_effects",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "CMake: Build"
         }
     ]
 }

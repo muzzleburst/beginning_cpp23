@@ -152,6 +152,23 @@ add_executable(Ex11_01
 
 Then update `.vscode/launch.json` and `.vscode/tasks.json` if you want VS Code run/debug configurations.
 
+## Creating Your Own Projects
+
+To create your own custom C++ projects (separate from the Apress examples):
+
+```bash
+./make_project.sh MyProject
+```
+
+This will:
+- Create a new project in `projects/MyProject/`
+- Generate a template source file with `import std;`
+- Add the project to CMakeLists.txt
+- Add VS Code launch and task configurations
+- Configure C++ module support
+
+Your custom projects are gitignored by default, so they won't be committed to the repository.
+
 ## C++ Modules Support
 
 This project uses C++23 modules with `import std;`. The GCM cache must be built before the project can compile. If you update your compiler or the cache becomes corrupted, re-run the "Build GCM Cache for std" task.

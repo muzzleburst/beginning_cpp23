@@ -202,3 +202,12 @@ add_example("10" "Ex10_05")
 
 # Note: Chapters 11-21 have multi-file examples with module files (.cppm)
 # These require more complex CMake configuration and will be added later.
+
+# Custom projects (user-created)
+
+# test_increment_side_effects
+add_executable(test_increment_side_effects "projects/test_increment_side_effects/test_increment_side_effects.cpp")
+target_compile_options(test_increment_side_effects PRIVATE 
+    -fmodules-ts
+    -fmodule-mapper=${CMAKE_SOURCE_DIR}/module.map
+)
