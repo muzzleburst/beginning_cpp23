@@ -96,7 +96,64 @@ SOFTWARE.
                 "isDefault": true
             },
             "dependsOn": ["CMake: Configure"],
-            "detail": "Build CMake project"
+            "detail": "Build all CMake targets"
+        },
+        {
+            "type": "shell",
+            "label": "CMake: Build test_increment_side_effects",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "--target",
+                "test_increment_side_effects"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "dependsOn": ["CMake: Configure"],
+            "detail": "Build only test_increment_side_effects"
+        },
+        {
+            "type": "shell",
+            "label": "CMake: Build test_unicode",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "--target",
+                "test_unicode"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "dependsOn": ["CMake: Configure"],
+            "detail": "Build only test_unicode"
+        },
+        {
+            "type": "shell",
+            "label": "CMake: Build exercise_2_1",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "--target",
+                "exercise_2_1"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "dependsOn": ["CMake: Configure"],
+            "detail": "Build only exercise_2_1"
         },
         {
             "type": "shell",
@@ -143,7 +200,7 @@ SOFTWARE.
             "options": {
                 "cwd": "${workspaceFolder}"
             },
-            "dependsOn": ["CMake: Build"],
+            "dependsOn": ["CMake: Build test_increment_side_effects"],
             "problemMatcher": [],
             "presentation": {
                 "echo": true,
@@ -154,6 +211,44 @@ SOFTWARE.
                 "clear": false
             },
             "detail": "Run test_increment_side_effects without debugging"
+        },
+        {
+            "type": "shell",
+            "label": "Run: test_unicode",
+            "command": "${workspaceFolder}/build/test_unicode",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": ["CMake: Build test_unicode"],
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "detail": "Run test_unicode without debugging"
+        },
+        {
+            "type": "shell",
+            "label": "Run: exercise_2_1",
+            "command": "${workspaceFolder}/build/exercise_2_1",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": ["CMake: Build exercise_2_1"],
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "detail": "Run exercise_2_1 without debugging"
         }
     ]
 }

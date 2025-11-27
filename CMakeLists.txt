@@ -211,3 +211,17 @@ target_compile_options(test_increment_side_effects PRIVATE
     -fmodules-ts
     -fmodule-mapper=${CMAKE_SOURCE_DIR}/module.map
 )
+
+# test_unicode
+add_executable(test_unicode "projects/test_unicode/test_unicode.cpp")
+target_compile_options(test_unicode PRIVATE 
+    -fmodules-ts
+    -fmodule-mapper=${CMAKE_SOURCE_DIR}/module.map
+)
+
+# exercise_2_1
+add_executable(exercise_2_1 "projects/exercise_2_1/exercise_2_1.cpp")
+target_compile_options(exercise_2_1 PRIVATE 
+    -fmodules-ts
+    -fmodule-mapper=${CMAKE_SOURCE_DIR}/module.map
+)

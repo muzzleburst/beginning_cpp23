@@ -77,7 +77,7 @@ SOFTWARE.
             "request": "launch",
             "command": "${workspaceFolder}/build/test_increment_side_effects",
             "cwd": "${workspaceFolder}",
-            "preLaunchTask": "CMake: Build"
+            "preLaunchTask": "CMake: Build test_increment_side_effects"
         },
         {
             "name": "test_increment_side_effects: Debug",
@@ -90,7 +90,49 @@ SOFTWARE.
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "preLaunchTask": "CMake: Build"
+            "preLaunchTask": "CMake: Build test_increment_side_effects"
+        },
+        {
+            "name": "test_unicode: Run (No Debug)",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "${workspaceFolder}/build/test_unicode",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "CMake: Build test_unicode"
+        },
+        {
+            "name": "test_unicode: Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/test_unicode",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "CMake: Build test_unicode"
+        },
+        {
+            "name": "exercise_2_1: Run (No Debug)",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "${workspaceFolder}/build/exercise_2_1",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "CMake: Build exercise_2_1"
+        },
+        {
+            "name": "exercise_2_1: Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/exercise_2_1",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "CMake: Build exercise_2_1"
         }
     ]
 }
