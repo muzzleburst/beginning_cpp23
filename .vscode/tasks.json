@@ -157,6 +157,25 @@ SOFTWARE.
         },
         {
             "type": "shell",
+            "label": "CMake: Build size_of_bitwise_result",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "--target",
+                "size_of_bitwise_result"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "dependsOn": ["CMake: Configure"],
+            "detail": "Build only size_of_bitwise_result"
+        },
+        {
+            "type": "shell",
             "label": "Run: Ex1_01",
             "command": "${workspaceFolder}/build/Ex1_01",
             "options": {
@@ -249,6 +268,25 @@ SOFTWARE.
                 "clear": false
             },
             "detail": "Run exercise_2_1 without debugging"
+        },
+        {
+            "type": "shell",
+            "label": "Run: size_of_bitwise_result",
+            "command": "${workspaceFolder}/build/size_of_bitwise_result",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": ["CMake: Build size_of_bitwise_result"],
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "detail": "Run size_of_bitwise_result without debugging"
         }
     ]
 }

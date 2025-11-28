@@ -227,3 +227,10 @@ target_compile_options(exercise_2_1 PRIVATE
     -Werror=float-conversion
     -Werror=conversion
 )
+
+# size_of_bitwise_result
+add_executable(size_of_bitwise_result "projects/size_of_bitwise_result/size_of_bitwise_result.cpp")
+target_compile_options(size_of_bitwise_result PRIVATE 
+    -fmodules-ts
+    -fmodule-mapper=${CMAKE_SOURCE_DIR}/module.map
+)

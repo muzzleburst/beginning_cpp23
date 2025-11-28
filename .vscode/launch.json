@@ -133,6 +133,27 @@ SOFTWARE.
             "externalConsole": false,
             "MIMode": "gdb",
             "preLaunchTask": "CMake: Build exercise_2_1"
+        },
+        {
+            "name": "size_of_bitwise_result: Run (No Debug)",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "${workspaceFolder}/build/size_of_bitwise_result",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "CMake: Build size_of_bitwise_result"
+        },
+        {
+            "name": "size_of_bitwise_result: Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/size_of_bitwise_result",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "CMake: Build size_of_bitwise_result"
         }
     ]
 }
